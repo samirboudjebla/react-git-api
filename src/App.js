@@ -4,9 +4,10 @@ import './App.css';
 import { Card } from './components/card/card.component';
 
 import { CardList } from './components/card-list/cart-list.component'
+import { Form } from './components/form/form.component';
 
 
-const contacts = [{
+const myStaticContacts = [{
   login: "samirboudjebla",
   id: 46310641,
   node_id: "MDQ6VXNlcjQ2MzEwNjQx",
@@ -145,13 +146,26 @@ const contacts = [{
 ];
 
 class App extends Component {
-
+    state = {
+        contacts: [],
+    };
+    addProfile = (profileData) => {
+        this.setState(prevState => ({
+            contacts: [...prevState.contacts, profileData],
+        }));
+    };
 
   render() {
-    return (
-      <div>
-            <CardList contacts={contacts} />
-      </div>
+      return (
+          <div >
+              <div>
+                  <Form onSubmit={this.addProfile}/>
+              </div>
+              <div>
+                  <CardList contacts={this.state.contacts} />
+              </div>
+          </div>
+
     );
   }
 
