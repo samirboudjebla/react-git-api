@@ -1,5 +1,15 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Project objective
+- Work on React classes and functions<br />
+- Implemented API calls<br />
+- Display the api call resuts<br />
+
+## Implemented features
+- Call github public apis<br />
+- Created components (Card = github profile, cardList = list of githubt profile, a form component to enter the github profile to be retrived<br />
+
+
 ## Available Scripts
 
 In the project directory, you can run:
