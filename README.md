@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Work on React classes and functions<br />
 - Implemented API calls<br />
 - Display the api call resuts<br />
+- Implementation of two trainings one from udemy and one from pluralsight<br />
+
 
 ## Implemented features
 - Call github public apis<br />
